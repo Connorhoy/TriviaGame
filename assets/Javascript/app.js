@@ -1,8 +1,9 @@
 /* JavaScript for Star Wars Trivia Game */
 
+// Variable with arrays of questions for our Trivia Game.
 var questions = [{
     question: "What planet was Luke Skywalker raised on?",
-    choices: ["Coruscant", "Tatoinne", "Scarif", "Hoth"],
+    choices: ["Coruscant", "Tatooine", "Scarif", "Hoth"],
     correctAnswer: 2
 }, {
     question: "What was the name of Han Solo's spaceship?",
@@ -42,7 +43,7 @@ $(document).ready(function () {
                 $(document).find(".quizMessage").text("Please select an answer");
                 $(document).find(".quizMessage").show();
             } else {
-                // TODO: Remove any message -> not sure if this is efficient to call this each time....
+                // TODO: Remove any message - not sure if this is efficient to call this each time....
                 $(document).find(".quizMessage").hide();
 
                 if (value == questions[currentQuestion].correctAnswer) {
@@ -75,8 +76,6 @@ $(document).ready(function () {
 // This displays the current question AND the choices
 function displayCurrentQuestion() {
 
-    console.log("In display current Question");
-
     var question = questions[currentQuestion].question;
     var questionClass = $(document).find(".triviacontainer > .question");
     var choiceList = $(document).find(".triviacontainer > .choiceList");
@@ -95,17 +94,20 @@ function displayCurrentQuestion() {
     }
 }
 
+/* This function resets the quiz upon the button click. */
 function resetQuiz() {
     currentQuestion = 0;
     correctAnswers = 0;
     hideScore();
 }
 
+/* This function displays the games score. */
 function displayScore() {
     $(document).find(".triviacontainer > .result").text("You scored: " + correctAnswers + " out of: " + questions.length);
     $(document).find(".triviacontainer > .result").show();
 }
 
+/* This hides the games score until the game is completed. */
 function hideScore() {
     $(document).find(".result").hide();
 }
