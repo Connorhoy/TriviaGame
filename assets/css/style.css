@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Rokkitt);
+ 
  h1 {
     font-family:'Rokkitt', serif;
     text-align: center;
@@ -33,16 +34,17 @@ p {
 .nextButton {
     box-shadow: 3px 3px 5px #888;
     border-radius: 6px;
-    width: 150px;
-    height: 40px;
+    width: 300px;
+    height: 50px;
     text-align: center;
-    background-color: lightgrey;
+    background-color: yellow;
     /*clear: both;*/
-    color: red;
+    color: black;
     font-family:'Rokkitt', serif;
+    font-size: 19px;
     position: relative;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .question {
     font-family:'Rokkitt', serif;
@@ -66,7 +68,7 @@ p {
 }
 .choiceList {
     font-family: Courier, serif;
-    color: blueviolet;
+    color: black;
 }
 .result {
     width: 30%;
