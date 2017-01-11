@@ -1,18 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Rokkitt);
- 
- body {
-    background-image: url("C:/Users/conno/Documents/GitHub/TriviaGame/images/background.jpg");
-}
-
  h1 {
     font-family:'Rokkitt', serif;
     text-align: center;
 }
-
 ul {
     list-style: none;
 }
-
 li {
     font-family:'Rokkitt', serif;
     font-size: 2em;
@@ -25,8 +18,7 @@ input[type=radio] {
 p {
     font-family:'Rokkitt', serif;
 }
-
-/* Trivia Classes */
+/* Quiz Classes */
  .quizContainer {
     background-color: lightgoldenrodyellow;
     border-radius: 6px;
@@ -41,17 +33,16 @@ p {
 .nextButton {
     box-shadow: 3px 3px 5px #888;
     border-radius: 6px;
-    width: 300px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     text-align: center;
-    background-color: yellow;
+    background-color: lightgrey;
     /*clear: both;*/
-    color: black;
+    color: red;
     font-family:'Rokkitt', serif;
-    font-size: 19px;
     position: relative;
     margin: auto;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 .question {
     font-family:'Rokkitt', serif;
@@ -75,7 +66,7 @@ p {
 }
 .choiceList {
     font-family: Courier, serif;
-    color: yellow;
+    color: blueviolet;
 }
 .result {
     width: 30%;
@@ -86,20 +77,4 @@ p {
     text-align: center;
     font-family:'Rokkitt', serif;
 }
-
-.timer {
-        width: 20%;
-        height: 11%;
-        position: absolute;
-        margin: 0 auto;
-        top: 20%;
-        right:  5%;
-        background-color: rgba(0,0,0,.5);
-        color: red;
-        border-radius: 10px;
-        border: lightgrey 3px;
-        display: flex;
-        font-family: 'Rokkitt', serif;
-        align-items: center;
-        justify-content: center;
-    }
+/* End of Quiz Classes */
