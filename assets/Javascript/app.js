@@ -4,23 +4,23 @@
 var questions = [{
     question: "What planet was Luke Skywalker raised on?",
     choices: ["Coruscant", "Tatooine", "Scarif", "Hoth"],
-    correctAnswer: 2
+    correctAnswer: 1
 }, {
     question: "What was the name of Han Solo's spaceship?",
     choices: ["Death Rider", "Dark Saber", "X-Wing", "Millennium Falcon"],
-    correctAnswer: 4
+    correctAnswer: 3
 }, {
     question: "Who was the leader of the Empire?",
     choices: ["Darth Vader", "Governor Tarkin", "ST-7224", "The Emperor"],
-    correctAnswer: 4
+    correctAnswer: 3
 }, {
     question: "How many Death Stars were created and destroyed in Episode 4-6?",
     choices: ["One", "Two", "Three", "Four"],
-    correctAnswer: 2
+    correctAnswer: 1
 }, {
     question: "Which of the following planets is a huge city?",
     choices: ["Alderran", "Yavin IV", "Coruscant", "Nar Shadda"],
-    correctAnswer: 3
+    correctAnswer: 2
 }];
 
 var currentQuestion = 0;
