@@ -86,3 +86,20 @@ p {
     text-align: center;
     font-family:'Rokkitt', serif;
 }
+
+.timer {
+        width: 20%;
+        height: 11%;
+        position: absolute;
+        margin: 0 auto;
+        top: 20%;
+        right:  5%;
+        background-color: rgba(0,0,0,.5);
+        color: red;
+        border-radius: 10px;
+        border: lightgrey 3px;
+        display: flex;
+        font-family: 'Rokkitt', serif;
+        align-items: center;
+        justify-content: center;
+    }
